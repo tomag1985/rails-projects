@@ -19,7 +19,14 @@
   <p><%= @project.description %></p>
   <h3>Have a look at the schema:</h3>
 
-  <img src="<%= @project.schema %>" alt="schema" class="responsive" style="margin-bottom: 10px;">
+  
+  <% if @project.name != "Projects" %>
+    <img src="<%= @project.schema %>" alt="schema" class="responsive" style="margin-bottom: 10px;">
+  <% else %>
+    <img src="<%= @project.schema %>" alt="schema" class="smallresponsive" style="margin-bottom: 10px;">
+  <% end %>
+  
+
 
   <h3>Is it responsive?</h3>
 
