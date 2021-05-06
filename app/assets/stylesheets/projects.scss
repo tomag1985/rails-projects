@@ -2,13 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .responsive {
-  width: 80%;
+  width: 65%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.smallresponsive{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
   background-color: #E8E9EB;
