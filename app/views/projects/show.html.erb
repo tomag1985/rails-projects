@@ -11,8 +11,9 @@
 
 <div class="container" style="margin-top: 10px;">
   <div class="mt-3 mb-2">
-    <i class="fas fa-arrow-left"> </i>
-    <%= link_to "back to home", root_path %>
+    <%= link_to root_path do %>
+      <i class="fas fa-arrow-left"> Back to home </i>
+    <% end %>
   </div>
   <h3>What is this about?</h3>
   <p><%= @project.description %></p>

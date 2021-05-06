@@ -15,12 +15,17 @@
   <body>
 
     <nav class="navbar navbar-light bg-light justify-content-between">
+      <script>
+      function hover(element) {
+      element.setAttribute('src', 'https://res.cloudinary.com/dibnvedk9/image/upload/v1620261383/projects/thug_life_aq8k31.png');
+      }
+
+      function unhover(element) {
+      element.setAttribute('src', 'https://res.cloudinary.com/dibnvedk9/image/upload/v1620183855/projects/1576292896774_aroody.jpg');
+      }
+      </script>
       <a href="http://tomagprojects.herokuapp.com/">
-        <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-        <div class="figure">
-          <img class="Sirv image-main avatar" src="https://demo.sirv.com/hc/Bose-700-a.jpg?w=10&colorize.color=efefef" data-src="https://res.cloudinary.com/dibnvedk9/image/upload/v1620183855/projects/1576292896774_aroody.jpg">
-          <img class="Sirv image-hover avatar" data-src="https://res.cloudinary.com/dibnvedk9/image/upload/v1620183934/projects/thug_life_qoisxm.png">
-        </div>
+        <img id="my-img" src="https://res.cloudinary.com/dibnvedk9/image/upload/v1620183855/projects/1576292896774_aroody.jpg" onmouseover="hover(this);" onmouseout="unhover(this);" />
       </a>
 
 

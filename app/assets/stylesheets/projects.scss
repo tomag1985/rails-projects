@@ -1,3 +1,16 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.responsive {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body {
+  background-color: #E8E9EB;
+  font-family: 'Raleway', sans-serif;
+}
